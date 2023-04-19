@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SwapListView</string>
+    <string name="delete"><![CDATA[<<<<<<<< Delete >>>>>>>>]]></string>
+</resources>

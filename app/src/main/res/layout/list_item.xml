@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lyt_container"
+    android:background="@color/white">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="@dimen/list_item_height"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/list_item_padding_sides"
+            android:paddingRight="@dimen/list_item_padding_sides"
+            android:layout_weight="4" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/image"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_weight="2"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@drawable/roudned"
+        android:layout_margin="10dp"
+        android:paddingLeft="@dimen/list_item_padding_sides"
+        android:paddingRight="@dimen/list_item_padding_sides"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        >-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/txt_delete"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:clickable="false"
+            android:visibility="gone"
+            android:background="@drawable/roudned"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:hapticFeedbackEnabled="true"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+   <!-- </LinearLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
